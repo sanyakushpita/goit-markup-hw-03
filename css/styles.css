@@ -1,3 +1,4 @@
+/* Hidden */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -10,11 +11,12 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-/* Studio */
+/* Studio - Portfolio */
 body {
   font-family: 'Roboto', sans-serif;
   color: #2e2f42;
 }
+/* Root */
 :root {
   /* Active button color */
   --active-color: #404bbf;
@@ -22,11 +24,17 @@ body {
   --logo-color: #4d5ae5;
   --logo-color-one: #2e2f42;
   --logo-color-two: #f4f4fd;
-  --address-color: #434455;
   /* Nav color */
   --nav-color: #2e2f42;
+  --address-color: #434455;
+  /* Button service color */
   --button-studio-color: #ffffff;
   --button-studio-background-color: #4d5ae5;
+  /* Button filter color */
+  --button-portfolio-color: #4d5ae5;
+  --button-portfolio-background: #f4f4fd;
+  --button-portfolio-active-color: #ffffff;
+  --border-color: #e7e9fc;
   /* Content color */
   --title-color: #ffffff;
   --content-title-color: #2e2f42;
@@ -35,10 +43,6 @@ body {
   --list-item-color: #434455;
   --team-list-background: #ffffff;
   --footer-text-color: #e7e9fc;
-  /* Button filter */
-  --button-portfolio-color: #4d5ae5;
-  --button-portfolio-active-color: #ffffff;
-  --border-color: #e7e9fc;
 }
 /* Navigation */
 .nav-logo > span {
@@ -54,15 +58,7 @@ body {
   text-transform: uppercase;
 }
 .site-nav {
-  list-style: none;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.site-address {
-  list-style: none;
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -71,14 +67,20 @@ body {
   text-decoration: none;
   color: var(--nav-color);
 }
-.address-link {
-  text-decoration: none;
-  color: var(--address-color);
-}
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.current {
   color: var(--active-color);
+}
+.site-address {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.address-link {
+  text-decoration: none;
+  color: var(--address-color);
 }
 .address-link:hover,
 .address-link:focus {
@@ -87,17 +89,7 @@ body {
 .address-link:active {
   color: var(--active-color);
 }
-/* Information */
-.main-content-title {
-  background: var(--background-footer-color);
-}
-.content-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-}
+/* Studio Button */
 .button-service {
   font-family: inherit;
   cursor: pointer;
@@ -115,94 +107,7 @@ body {
 .button-service:focus {
   background: var(--active-color);
 }
-/* Categories */
-.content-list {
-  list-style: none;
-}
-.content-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--content-title-color);
-}
-.content-item-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--list-item-color);
-}
-.content-service {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--content-title-color);
-}
-.service-list {
-  list-style: none;
-}
-/* Our Team */
-.main-content-team {
-  background: var(--background-team-color);
-}
-.content-team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--content-title-color);
-}
-.team-list {
-  list-style: none;
-}
-.team-list > .item {
-  background: var(--team-list-background);
-}
-.team-list-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--content-title-color);
-}
-.team-list-position {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--list-item-color);
-}
-/* Additional Information */
-.footer {
-  background: var(--background-footer-color);
-}
-.footer-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--footer-text-color);
-}
-.footer-logo > span {
-  color: var(--logo-color);
-}
-.footer-logo {
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  color: var(--logo-color-two);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-/* Portfolio */
-
-/* Filter */
-.portfolio-filter-list {
-  list-style: none;
-}
+/* Portfolio Button */
 .button-filter {
   font-family: inherit;
   cursor: pointer;
@@ -210,6 +115,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  background: var(--button-portfolio-background);
   color: var(--button-portfolio-color);
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -223,20 +129,69 @@ body {
   background: var(--active-color);
   color: var(--button-portfolio-active-color);
 }
-/* Projects */
-.portfolio-project-list {
-  list-style: none;
+/* Studio-Portfolio - title - text - list - other */
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
 }
-.project-item {
+.hero {
+  background: var(--background-footer-color);
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--content-title-color);
+}
+.title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--content-title-color);
 }
-.project-item-text {
+.text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--list-item-color);
+}
+.list {
+  list-style: none;
+}
+/* Our Team */
+.team {
+  background: var(--background-team-color);
+}
+.team-list > .item {
+  background: var(--team-list-background);
+}
+
+/* Footer */
+.footer {
+  background: var(--background-footer-color);
+}
+
+.footer-logo > span {
+  color: var(--logo-color);
+}
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--logo-color-two);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
 }
