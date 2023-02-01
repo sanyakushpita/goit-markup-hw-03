@@ -242,10 +242,8 @@ img {
 .team-list .item {
   background: var(--team-list-background);
 }
-.team-list .img {
-  padding-bottom: 32px;
-}
-.team-list p {
+.team-list .img-info {
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 /* Portfolio-container */
@@ -256,12 +254,12 @@ img {
 .btn-list {
   margin-bottom: 72px;
 }
-.project-list .img {
+.project-list .img-info {
+  padding-top: 32px;
   padding-bottom: 32px;
+  border: 1px solid #e7e9fc;
 }
-.project-list p {
-  padding-bottom: 32px;
-}
+
 /* Footer-container */
 .footer {
   background: var(--background-footer-color);
