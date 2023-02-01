@@ -208,10 +208,12 @@ img {
 }
 .feature-container .list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .feature-container .item {
   width: 264px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 /* ---------- Service ------------ */
 .service {
@@ -223,6 +225,7 @@ img {
   gap: 24px;
 }
 .service-container .item {
+  border: 1px solid var(--border-color);
   flex-basis: calc((100% - 48px) / 3);
 }
 /* ---------- Team ----------- */
@@ -239,9 +242,6 @@ img {
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
 }
 .team-container .team-list {
   display: flex;
@@ -249,6 +249,9 @@ img {
   gap: 24px;
 }
 .team-container .item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 72px) / 4);
 }
 /* ---------- Portfolio ---------- */
@@ -293,7 +296,9 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-  border: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .portfolio-container .project-list {
   display: flex;
