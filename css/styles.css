@@ -70,7 +70,7 @@ img {
   padding: 0px 15px;
   margin: 0px auto;
 }
-/*---------- Navigation ----------*/
+/*---------- Header ----------*/
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -101,7 +101,7 @@ img {
   display: flex;
   margin-right: 76px;
 }
-/* ---------- Nav ---------- */
+/* ---------- Navigation ---------- */
 .site-nav {
   font-weight: 500;
   font-size: 16px;
@@ -118,7 +118,7 @@ img {
 .site-nav .link.current {
   color: var(--active-color);
 }
-/* ---------- Contacts ---------- */
+/* ---------- Address ---------- */
 .contacts {
   font-style: normal;
   font-size: 16px;
@@ -160,7 +160,6 @@ img {
   font-size: 16px;
   color: var(--primary-text-color);
 }
-
 .list {
   list-style: none;
 }
@@ -240,8 +239,7 @@ img {
 }
 .team-list .img-info {
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 .team-container .team-list {
   display: flex;
@@ -293,9 +291,7 @@ img {
 }
 /* ---------- Projects ---------- */
 .project-list .img-info {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
