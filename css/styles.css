@@ -227,7 +227,7 @@ img {
   border: 1px solid var(--border-color);
   flex-basis: calc((100% - 48px) / 3);
 }
-/* ---------- Team ----------- */
+/* ----------Our Team ----------- */
 .team {
   background: var(--background-team-color);
 
