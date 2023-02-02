@@ -78,10 +78,10 @@ img {
 }
 .header-container {
   display: flex;
+  align-items: center;
 }
 .nav {
   display: flex;
-  align-items: center;
   margin-right: auto;
 }
 /* ---------- logo-Nav ----------- */
